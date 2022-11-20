@@ -16,7 +16,6 @@ do
     app.MapGet("/object", handler (fun ctx -> { Message = "Hello, World as a JSON object!" })) |> ignore
     app.MapGet("/text", handler (fun ctx -> "Hello, World as a string!")) |> ignore
 
-
 do
     app.UseSwagger().UseSwaggerUI() |> ignore
 
